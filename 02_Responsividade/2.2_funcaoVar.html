@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Função var()</title>
+    <style>
+        /* Definindo variáveis CSS no :root */
+        :root {
+            --cor-primaria: #3498db;
+            --cor-secundaria: #2ecc71;
+            --cor-texto: #ffffff;
+            --padding-padrao: 10px;
+            --fonte-padrao: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--fonte-padrao);
+            background-color: var(--cor-primaria);
+            color: var(--cor-texto);
+            padding: var(--padding-padrao);
+        }
+
+        h1 {
+            color: var(--cor-secundaria);
+        }
+
+        button {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+            border: none;
+            padding: var(--padding-padrao);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Utilização da Função var()</h1>
+    <p>Este é um exemplo de como usar variáveis CSS com a função <code>var()</code>.</p>
+    <button>Clique Aqui</button>
+</body>
+</html>
