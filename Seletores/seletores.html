@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Seletores CSS</title>
+    <style>
+        /* Seletores Simples */
+        h1 { color: blue; } /* Seletor de tipo */
+        .classe { color: green; } /* Seletor de classe */
+        #id { color: red; } /* Seletor de ID */
+
+        /* Seletores Combinadores */
+        div p { color: purple; } /* Descendente */
+        div > p { color: orange; } /* Filho direto */
+        div + p { color: brown; } /* Irmão adjacente */
+        div ~ p { color: teal; } /* Irmãos gerais */
+
+        /* Seletores de Atributo */
+        [type="text"] { border: 2px solid blue; } /* Atributo com valor específico */
+        [type^="te"] { border: 2px solid green; } /* Atributo começando com "te" */
+        [type$="xt"] { border: 2px solid red; } /* Atributo terminando com "xt" */
+        [type*="ex"] { border: 2px solid purple; } /* Atributo contendo "ex" */
+
+        /* Pseudo-classes */
+        a:hover { color: pink; } /* Estado de hover */
+        a:visited { color: gray; } /* Link visitado */
+        input:focus { background-color: yellow; } /* Campo focado */
+        p:first-child { font-weight: bold; } /* Primeiro filho */
+        p:last-child { font-style: italic; } /* Último filho */
+        p:nth-child(2) { text-decoration: underline; } /* Segundo filho */
+
+        /* Pseudo-elementos */
+        p::before { content: "Antes: "; color: gray; } /* Antes do conteúdo */
+        p::after { content: " Depois."; color: gray; } /* Depois do conteúdo */
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p class="classe">Parágrafo com classe.</p>
+    <p id="id">Parágrafo com ID.</p>
+
+    <div>
+        <p>Parágrafo dentro de uma div.</p>
+        <p>Outro parágrafo dentro de uma div.</p>
+    </div>
+    <p>Parágrafo fora da div.</p>
+
+    <a href="#">Link de exemplo</a>
+
+    <input type="text" placeholder="Texto">
+    <input type="password" placeholder="Senha">
+</body>
+</html>
